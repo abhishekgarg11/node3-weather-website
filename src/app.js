@@ -62,7 +62,7 @@ app.get('/weather', (req, res) => {
                 })
             }
             res.send({
-                forecast: 'Current Temp is ' + forecastdata.currentTemp + ' but it feels like ' + forecastdata.feelsLike + ' and weather is ' + forecastdata.description,
+                forecast: 'Weather is '+forecastdata.description+' .Current Temp is ' + forecastdata.currentTemp + ' C but it feels like ' + forecastdata.feelsLike + ' C. Wind Speed is '+forecastdata.windspeed,
                 location: location
             })
         })
